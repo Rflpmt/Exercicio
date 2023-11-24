@@ -1,0 +1,42 @@
+
+	funcao inicio()
+	{
+	cadeia cat =["1","2","3","4","5","6","7","8","9","10"] de inteiro
+        i, soma: inteiro
+        media: real
+
+    vetor[1] := 2
+    vetor[2] := 5
+    vetor[3] := 1
+    vetor[4] := 3
+    vetor[5] := 4
+    vetor[6] := 9
+    vetor[7] := 7
+    vetor[8] := 8
+    vetor[9] := 10
+    vetor[10] := 6
+
+    Escreva("Elementos nos índices ímpares:")
+    Para i de 1 ate 10 passo 2 faca
+        Escreva(" ", vetor[i])
+    Fim Para
+    Escreva("\n")
+
+    Escreva("Elementos pares:")
+    Para i de 1 ate 10 faca
+        Se vetor[i] mod 2 = 0 Entao
+            Escreva(" ", vetor[i])
+        Fim Se
+    Fim Para
+    Escreva("\n")
+
+    soma := 0
+    Para i de 1 ate 10 faca
+        soma := soma + vetor[i]
+    Fim Para
+    Escreva("Soma: ", soma, "\n")
+
+    media := soma / 10.0
+    Escreva("Média: ", media)
+	}
+}
